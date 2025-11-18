@@ -9,8 +9,20 @@
             "matchStrings": [
                 "#\\s*renovate:\\s*?(suite=(?<suite>.*?))?\\s*depName=(?<depName>.*?)?\\sARG .*_VERSION=\"(?<currentValue>.*)\""
             ],
-            "registryUrlTemplate": "https://archive.ubuntu.com/ubuntu?suite={{#if suite }}{{suite}}{{else}}stable{{/if}}&components=main,restricted,universe,multiverse&binaryArch=amd64",
+            "registryUrlTemplate": "https://deb.debian.org/debian?suite={{#if suite }}{{suite}}{{else}}stable{{/if}}&components=main,restricted,universe,multiverse&binaryArch=amd64",
             "datasourceTemplate": "deb"
+        }
+    ],
+    "packageRules": [
+        {
+            "matchDatasources": [
+                "deb"
+            ],
+            "matchPackageNames": [
+                "ca-certificates"
+            ],
+            "automerge": true,
+            "versioning": "semver-partial"
         }
     ],
     "assignees": [

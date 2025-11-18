@@ -1,16 +1,16 @@
-FROM ubuntu:noble@sha256:c35e29c9450151419d9448b0fd75374fec4fff364a27f176fb458d472dfc9e54
+FROM debian:trixie-slim
 
 # renovate: suite=noble depName=unbound
-ARG UNBOUND_VERSION="1.19.2-1ubuntu3.5"
+ARG UNBOUND_VERSION="1.22.0-1"
 
 # renovate: suite=noble depName=openssl
-ARG OPENSSL_VERSION="3.0.13-0ubuntu3.6"
+ARG OPENSSL_VERSION="3.5.4-1~deb13u1"
 
 # renovate: suite=noble depName=ca-certificates
-ARG CA_CERTIFICATES_VERSION="20240203"
+ARG CA_CERTIFICATES_VERSION="20250419"
 
 # renovate: suite=noble depName=bind9-dnsutils
-ARG BIND9_DNSUTILS_VERSION="1:9.18.39-0ubuntu0.24.04.2"
+ARG BIND9_DNSUTILS_VERSION="1:9.20.15-1~deb13u1"
 
 RUN apt-get update && apt-get install -y \
     unbound="${UNBOUND_VERSION}" \

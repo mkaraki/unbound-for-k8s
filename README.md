@@ -1,4 +1,4 @@
-# Ubuntu version of unbound docker image
+# Debian version of unbound docker image
 
 This Dockerfile will create [`unbound`](https://packages.ubuntu.com/noble/unbound) installed image with
 [`openssl`](https://packages.ubuntu.com/noble/openssl),

@@ -12,5 +12,9 @@
             "registryUrlTemplate": "https://archive.ubuntu.com/ubuntu?suite={{#if suite }}{{suite}}{{else}}stable{{/if}}&components=main,restricted,universe,multiverse&binaryArch=amd64",
             "datasourceTemplate": "deb"
         }
-    ]
+    ],
+    "assignees": [
+        "mkaraki"
+    ],
+    "pinDigests": true
 }

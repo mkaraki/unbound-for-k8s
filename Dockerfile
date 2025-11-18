@@ -1,15 +1,15 @@
 FROM debian:trixie-slim
 
-# renovate: suite=noble depName=unbound
+# renovate: suite=trixie depName=unbound
 ARG UNBOUND_VERSION="1.22.0-1"
 
-# renovate: suite=noble depName=openssl
+# renovate: suite=trixie depName=openssl
 ARG OPENSSL_VERSION="3.5.4-1~deb13u1"
 
-# renovate: suite=noble depName=ca-certificates
+# renovate: suite=trixie depName=ca-certificates
 ARG CA_CERTIFICATES_VERSION="20250419"
 
-# renovate: suite=noble depName=bind9-dnsutils
+# renovate: suite=trixie depName=bind9-dnsutils
 ARG BIND9_DNSUTILS_VERSION="1:9.20.15-1~deb13u1"
 
 RUN apt-get update && apt-get install -y \

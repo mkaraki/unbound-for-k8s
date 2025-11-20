@@ -21,12 +21,20 @@
             "matchPackageNames": [
                 "ca-certificates"
             ],
+            "automergeType": "branch",
+            "automerge": true
+        },
+        {
+            "matchDatasources": ["docker"],
+            "matchPackageNames": ["debian", "ubuntu"],
+            "matchUpdateTypes": ["digest"],
             "automerge": true,
-            "versioning": "semver-partial"
+            "automergeType": "branch" 
         }
     ],
     "assignees": [
         "mkaraki"
     ],
     "pinDigests": true
+
 }

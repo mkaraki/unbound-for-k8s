@@ -10,7 +10,7 @@ ARG OPENSSL_VERSION="3.5.5-1~deb13u1"
 ARG CA_CERTIFICATES_VERSION="20250419"
 
 # renovate: suite=trixie depName=bind9-dnsutils
-ARG BIND9_DNSUTILS_VERSION="1:9.20.15-1~deb13u1"
+ARG BIND9_DNSUTILS_VERSION="1:9.20.18-1~deb13u1"
 
 RUN apt-get update && apt-get install -y \
     unbound="${UNBOUND_VERSION}" \

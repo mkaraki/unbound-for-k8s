@@ -1,4 +1,4 @@
-FROM debian:trixie-slim@sha256:77ba0164de17b88dd0bf6cdc8f65569e6e5fa6cd256562998b62553134a00ef0
+FROM debian:trixie-slim@sha256:26f98ccd92fd0a44d6928ce8ff8f4921b4d2f535bfa07555ee5d18f61429cf0c
 
 # renovate: suite=trixie depName=unbound
 ARG UNBOUND_VERSION="1.22.0-2+deb13u1"

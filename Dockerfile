@@ -4,7 +4,7 @@ FROM debian:trixie-slim@sha256:d7e12182ce18b85b93007c1dedf31f2d29e01ccf3182cc401
 ARG UNBOUND_VERSION="1.22.0-2+deb13u3"
 
 # renovate: suite=trixie depName=openssl
-ARG OPENSSL_VERSION="3.5.7-1~deb13u2"
+ARG OPENSSL_VERSION="3.5.9-1~deb13u1"
 
 # renovate: suite=trixie depName=ca-certificates
 ARG CA_CERTIFICATES_VERSION="20250419"

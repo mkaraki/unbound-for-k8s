@@ -1,7 +1,7 @@
 FROM debian:trixie-slim@sha256:d7e12182ce18b85b93007c1dedf31f2d29e01ccf3182cc4017c709b6259bc132
 
 # renovate: suite=trixie depName=unbound
-ARG UNBOUND_VERSION="1.22.0-2+deb13u3"
+ARG UNBOUND_VERSION="1.26.2-0+deb13u1"
 
 # renovate: suite=trixie depName=openssl
 ARG OPENSSL_VERSION="3.5.7-1~deb13u2"
